@@ -1,10 +1,10 @@
-﻿# ProcessPrivileges
+# ProcessPrivileges
 
 Privileges determine the type of system operations that a process can perform. Process Privileges is a set of extension methods, written in C#, for System.Diagnostics.Process. It implements the functionality necessary to query, enable, disable or remove privileges on a process.
 
-This is unofficial fork of original project from [https://archive.codeplex.com/?p=processprivileges](CodePlex).
+This is unofficial fork of original project from [CodePlex](https://archive.codeplex.com/?p=processprivileges).
 
-**Description**
+## Description
 
 Privileges determine the type of system operations that a process can perform. 
 
@@ -27,10 +27,10 @@ In addition, a privilege enabler class is offered that enables privileges on a p
 For more information on privileges, see:
 
 Privileges
-[http://msdn.microsoft.com/en-us/library/aa379306.aspx](http://msdn.microsoft.com/en-us/library/aa379306.aspx)
+[https://docs.microsoft.com/en-gb/windows/desktop/SecAuthZ/privileges](https://docs.microsoft.com/en-gb/windows/desktop/SecAuthZ/privileges)
 
 Privilege Constants
-[http://msdn.microsoft.com/en-us/library/bb530716.aspx](http://msdn.microsoft.com/en-us/library/bb530716.aspx)
+[https://docs.microsoft.com/en-gb/windows/desktop/SecAuthZ/privilege-constants](https://docs.microsoft.com/en-gb/windows/desktop/SecAuthZ/privilege-constants)
 
 **Guidance**
 
@@ -249,4 +249,4 @@ Restore => Enabled (PrivilegeModified)
 | SeUndockPrivilege | {"SE_UNDOCK_NAME"} | Privilege.Undock | _Remove computer from docking station._ | Windows 2000 |
 | SeUnsolicitedInputPrivilege | {"SE_UNSOLICITED_INPUT_NAME"} | Privilege.UnsolicitedInput | _Read unsolicited input from a terminal device._ | Windows 2000 |
 
-Related: _Process Token Privileges, [AdjustTokenPrivileges](http://msdn.microsoft.com/en-us/library/aa375202.aspx), [GetTokenInformation](http://msdn.microsoft.com/en-us/library/aa446671.aspx), [LookupPrivilegeName](http://msdn.microsoft.com/en-us/library/aa379176.aspx), [LookupPrivilegeValue](http://msdn.microsoft.com/en-us/library/aa379180.aspx), [LUID](http://msdn.microsoft.com/en-us/library/aa379261.aspx), [LUID_AND_ATTRIBUTES](http://msdn.microsoft.com/en-us/library/aa379263.aspx), [TOKEN_PRIVILEGES](http://msdn.microsoft.com/en-us/library/aa379630.aspx)_
+Related: _Process Token Privileges, [AdjustTokenPrivileges](https://docs.microsoft.com/en-us/windows/desktop/api/securitybaseapi/nf-securitybaseapi-adjusttokenprivileges), [GetTokenInformation](https://docs.microsoft.com/en-us/windows/desktop/api/securitybaseapi/nf-securitybaseapi-gettokeninformation), [LookupPrivilegeName](https://docs.microsoft.com/en-gb/windows/desktop/api/winbase/nf-winbase-lookupprivilegenamew), [LookupPrivilegeValue](https://docs.microsoft.com/en-gb/windows/desktop/api/winbase/nf-winbase-lookupprivilegevaluew), [LUID](https://docs.microsoft.com/en-gb/windows/desktop/api/winnt/ns-winnt-_luid), [LUID_AND_ATTRIBUTES](https://docs.microsoft.com/en-gb/windows/desktop/api/winnt/ns-winnt-_luid_and_attributes), [TOKEN_PRIVILEGES](https://docs.microsoft.com/en-gb/windows/desktop/api/winnt/ns-winnt-_token_privileges)_
